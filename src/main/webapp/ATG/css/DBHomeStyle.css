@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/* Instructions Page Styling */
+.instructions-container {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.instructions-title {
+    font-size: 30px; /* Increased font size */
+    font-weight: bold;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.instructions-desc {
+    font-size: 18px;
+    color: #7f8c8d;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Steps Grid Styling */
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between the grid items */
+}
+
+@media (max-width: 768px) {
+    .steps-grid {
+        grid-template-columns: 1fr; /* Stacks items on smaller screens */
+    }
+}
+
+.step-box {
+    background-color: white;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.step-box h3 {
+    font-size: 22px; /* Slightly larger heading */
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.step-box p {
+    font-size: 16px; /* Increased font size for text */
+    color: #34495e;
+}
+
+.step-box:hover {
+    transform: translateY(-5px); /* Hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Return Link Styling */
+.return-link {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.return-link .back-to-dashboard {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.return-link .back-to-dashboard:hover {
+    background-color: #2980b9;
+}
